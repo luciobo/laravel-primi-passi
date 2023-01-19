@@ -17,7 +17,6 @@ Route::get('/', function () {
 
     $name = "Lucio";
     $surname = "Bo";
-
     $listaSpesa = ["pizza","cacicavallo","birra tanta!"];
 
     return view('Home', [
@@ -31,7 +30,6 @@ Route::get('/Contatti', function () {
 
     $name = "Lucio";
     $surname = "Bo";
-
     $ContattiLucio = ["Lucio Bo","Via le mani dal...","luciobo@mailacaso.com"];
 
     return view('Contatti', [
@@ -40,4 +38,4 @@ Route::get('/Contatti', function () {
         "surname" => $surname,
         "ContattiLucio" => $ContattiLucio
     ]);
-});
+})->name("Contatti");

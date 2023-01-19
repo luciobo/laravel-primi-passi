@@ -19,7 +19,7 @@
         <nav class="d-flex justify-content-end">
             <ul class="p-1 m-0">
                 <li>
-                    <a href="/Contatti">Contatti</a>
+                    <a href="{{ route("Contatti") }}">Contatti</a>
                 </li>
             </ul>
         </nav>
