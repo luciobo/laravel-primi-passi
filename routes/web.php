@@ -26,3 +26,14 @@ Route::get('/', function () {
         "listaSpesa" => $listaSpesa,
     ]);
 });
+
+Route::get('/Contatti', function () {
+
+
+    $ContattiLucio = ["Lucio Bo","Via le mani dal...","luciobo@malevati.com"];
+
+    return view('Contatti', [
+
+        "ContattiLucio" => $ContattiLucio,
+    ]);
+});
