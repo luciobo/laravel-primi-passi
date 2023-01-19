@@ -18,8 +18,11 @@ Route::get('/', function () {
     $name = "Lucio";
     $surname = "Bo";
 
+    $listaSpesa = ["pizza","cacicavallo","birra tanta!"];
+
     return view('Home', [
         "name" => $name,
         "surname" => $surname,
+        "listaSpesa" => $listaSpesa,
     ]);
 });

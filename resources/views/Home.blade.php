@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,10 +14,24 @@
 </head>
 
 <body>
+<header class="">
 
-    <h1 class="text-success text-center p-5">
-    benvenuto:  {{$name}} {{$surname}}
-    </h1>
+</header>
+
+    <main>
+        <h1 class="text-success text-center p-5">
+            Benvenuto: {{ $name }} {{ $surname }}
+        </h1>
+
+        <ul class="text-center list-unstyled">
+            @foreach ($listaSpesa as $elListaSpesa)
+                <li>
+                    <h3>{{ $elListaSpesa }}</h3>
+                </li>
+            @endforeach
+        </ul>
+
+    </main>
 
 </body>
 
