@@ -29,11 +29,15 @@ Route::get('/', function () {
 
 Route::get('/Contatti', function () {
 
+    $name = "Lucio";
+    $surname = "Bo";
 
-    $ContattiLucio = ["Lucio Bo","Via le mani dal...","luciobo@malevati.com"];
+    $ContattiLucio = ["Lucio Bo","Via le mani dal...","luciobo@mailacaso.com"];
 
     return view('Contatti', [
-
-        "ContattiLucio" => $ContattiLucio,
+        
+        "name" => $name,
+        "surname" => $surname,
+        "ContattiLucio" => $ContattiLucio
     ]);
 });

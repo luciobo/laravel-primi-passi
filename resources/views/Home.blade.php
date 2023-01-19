@@ -16,8 +16,8 @@
 <body>
 
     <header class="bg-dark p-3">
-        <nav>
-            <ul>
+        <nav class="d-flex justify-content-end">
+            <ul class="p-1 m-0">
                 <li>
                     <a href="/Contatti">Contatti</a>
                 </li>
@@ -32,9 +32,12 @@
         </h1>
 
         <ul class="text-center list-unstyled">
-            @foreach ($ContattiLucio as $elcontLucio)
+            <li class="py-3">
+                <h2 class="tex">Cose da comprare:</h2>
+            </li>
+            @foreach ($listaSpesa as $ellistaSpesa)
                 <li>
-                    <h3>{{ $elcontLucio }}</h3>
+                    <h3>{{ $ellistaSpesa }}</h3>
                 </li>
             @endforeach
         </ul>
